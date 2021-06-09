@@ -22,3 +22,16 @@ Debido a lo anterior, nuestro proyecto de Machine Learning de clasificación de 
 
 Para desarrollar este proyecto planteamos aplicar un algoritmo no supervisado para la clasificación de imágenes del satélite Sentinel-2 instrumento multi-espectral Nivel A2, las cuales se obtendrán por medio de Copernicus Open Access Hub. Para la aplicación se propone emplear el clasificador de K-Vecino más próximo (K-Nearest Neighbor Classifier, K-NN).
 
+```
+Fuentes:
+ 
+Labastida, Jaime y Ruiz, Rosaura (coord.) (2010). "El Territorio Mexicano. 7.1.3. Factores que influyen en la distribución de los climas y la biodiversidad en México" en 
+
+Enciclopedia de Conocimientos Fundamentales: UNAM-Siglo XXI, Vol. 3 Historia, Geografía. México: Universidad Nacional Autónoma de México.
+
+Rzedowski, Jerzy (2006). Vegetación de México. 1ra. Edición digital. México: Comisión Nacional para el Conocimiento y Uso de la Biodiversidad, CONABIO. Primera Edición, 1978, 
+ 
+Limusa. 504 pp.
+
+CONAGUA-CENAPRED (2018). Puntos críticos de inundación en "Sistema de información sobre riesgos". México: Comisión Nacional del Agua, CONAGUA y Centro Nacional de Prevención de Desastres, CENAPRED. Disponible en: http://www.atlasnacionalderiesgos.gob.mx/archivo/visor-capas.html 
+ ```
