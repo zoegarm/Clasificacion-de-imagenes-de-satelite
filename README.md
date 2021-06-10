@@ -1,4 +1,4 @@
-# Clasificación no supervisada de imágenes de satélite.
+# Clasificación de imágenes de satélite.
  
 ### :round_pushpin: Equipo: 2
 
