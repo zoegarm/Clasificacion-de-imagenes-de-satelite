@@ -6,31 +6,54 @@
 
 ### Objetivo: Clasificar las áreas urbanas, verdes y cuerpos de agua
 
-### Metodología: Algoritmo no supervisado, K-Nearest Neighbor Classifier
+### Metodología: Algoritmos de clasificación supervisados y no supervisados
 
-El proyecto de Machine Learning que llevaremos a cabo se plantea a partir de una problemática ambiental y social de gran importancia para nuestro país, los cambios en el medio natural y sus efectos en el territorio. Con cambios nos referimos a todos los fenómenos medioambientales como temporales, huracanes, entre otras manifestaciones naturales, así como aquellos que son producto de la acción humana como sobre-explotación de las cuencas y cuerpos de agua, incendios provocados, crecimiento de la mancha urbana, entre otros. Para este proyecto en particular, nos abocaremos a los cambios provocados por aumento del caudal de los ríos e inundaciones, no obstante, este desarrollo puede aplicarse para la identificación de otros cambios en el territorio. El propósito de este proyecto es clasificar con un algoritmo no supervisado, las áreas urbanas, verdes y cuerpos de agua en periodos regulares así como los terrenos inundados en temporadas de lluvia a partir de imágenes de satélite.
+***
 
-México es un país con gran diversidad en su territorio, tanto en clima como en flora y fauna. La República Mexicana se ubica entre las zonas tropicales y templadas. Además de tener una posición latitudinal que contiene grandes desiertos, con un relieve y posición entre dos océanos que permite una distribución de climas con presencia de corriente marítimas cálidas y frías (Labastida y Ruiz, 2010). Asimismo, las temperaturas y la precipitación en el territorio presentan grandes contrastes tendiendo a los extremos, con promedios anuales de lluvia de sólo 50 mm en las zonas y temporadas más secas hasta 5,500 mm en promedio anual para las áreas y meses más húmedos (Rzedowski, 2006). 
+## Introducción
+<p align="justify">
+Actualmente, alrededor de nuestro planeta orbitan aproximadamente 7460 satélites artificiales (UNOOSA, 2021). Aproximadamente un 10% de éstos tienen entre sus funciones captar imágenes desde el espacio. Dentro de los proyectos de observación que permiten consultar sus imágenes en alta resolución destacan los satélites Landsat de Estados Unidos (NASA, 2021) y Sentinel, perteneciente a Copernicus de la Unión Europea (ESA, 2021).
+<p align="justify">
+ La disponibilidad de imágenes con alta calidad representa un recurso con gran potencial para diversos fines como protección del medio ambiente, prevención y atención frente a desastres naturales, planeación urbana, entre otros. No obstante, el análisis de las fotografías satelitales representa una labor muy demandante en tiempo y recursos humanos. Afortunadamente, es posible realizar estas tareas de identificación y categorización de imágenes de satélite por medio de algoritmos de Machine Learning.
+
+## **¿Cuál es el propósito y por qué es importante?**
+### _Objetivo y justificación_
+<p align="justify">
+ Por tanto, este proyecto tiene como objetivo clasificar espacios de terreno entre áreas con vegetación, cuerpos de agua y zonas urbanizadas, a partir de imágenes multi-espectrales del satélite Landsat 8. Para ello se aplicaron algoritmos de Machine Learning para la clasificación supervisada y no supervisada, los cuales fueron evaluados según su precisión y tiempo de cómputo.
+<p align="justify">
+De este modo, se busca contribuir a la resolución de problemáticas ambientales y sociales producto de fenómenos naturales así como acciones humanas. Por ejemplo, la observación del crecimiento de la mancha urbana, el manejo forestal y las alertas de deforestación, el monitoreo de tierras de cultivo y consumo de agua, la identificación de algas tóxicas en cuerpos de agua, la prevención y seguimiento de incendios, la observación de los cambios en los niveles el mar y áreas susceptibles a inundaciones, entre otros.
+
+## **¿Dónde y cómo lo realizamos?**
+### _Delimitación, datos y metodología_
+<p align="justify">
+ Para esta fase en particular del desarrollo, nos enfocamos en la zona sureste del Área Metropolitana de Guadalajara, la cual incluye a los municipios de San Pedro Tlaquepaque, El Salto y Tlajomulco de Zúñiga. Se eligió esta área ya que presenta vegetación de diferente tipo, cadenas montañosas como la Sierra de San Juan Cosalá, cuerpos de agua como la Laguna de Cajititlán y el Lago de Chapala, así como áreas urbanas. No obstante, este proyecto puede aplicarse para la identificación de otros territorios.
+ 
+ <p align="center">
+  <img src="/img_files/Guadalajara_1.png" "Área extendida de la zona de estudio" alt="NF"/>
+ <p align="center">
+  Área extendida de la zona de estudio, Landsat.
+
+<p align="justify">
+Se utilizaron imágenes captadas por el satélite Landsat 8, que contienen 7 bandas espectrales, esto es la cobertura o gama de longitudes de onda observadas por los sensores, los cuales se relacionan con la luz visible, infrarrojo cercano, infrarrojo de onda corta, infrarrojo térmico, entre otros (USGS-NASA, 2018). Dichas bandas constituyen conjuntos de datos no estructurados, a partir de los cuales se compone y clasifica la imagen final.
+<p align="justify">
+Para realizar la identificación se aplicaron algoritmos de Machine Learning. En primer lugar, para la clasificación no supervisada se empleó el K-Means Clustering y análisis de componentes principales. En segundo lugar, para la clasificación supervisada se aplicaron K-Nearest Neighbor Classifier, árboles de decisión y redes neuronales. Estos métodos fueron evaluados según su precisión en la identificación de las características del terreno así como a partir de la rapidez de su cálculo.
+
+## **¿Cuál es su utilidad y alcance?**
+### _Consideraciones finales_
+<p align="justify">
+ En suma, este proyecto se plantea desde un enfoque multipropósito, el cual aprovecha el acceso a imágenes de satélite de alta calidad en conjunto con el potencial de las técnicas de Machine Learning. De este modo, la apuesta es proveer de información útil a los sectores productivos, así como a los tomadores de decisiones en el ámbito público y social, mediante un proceso rápido y oportuno.
+
+## **Referencias:**
+<p align="left">
+ESA (2021) “About Copernicus”, Bélgica: European Space Agency, ESA. Recuperado de: https://scihub.copernicus.eu/ 
+
+NASA (2021). “The Landsat Program”, Estados Unidos: National Aeronautics and Space Administration, NASA. Recuperado de: https://landsat.gsfc.nasa.gov/
+
+UNOOSA (2021). “Outer Space Objects Index”, Austria: United Nations Office for Outer Space Affairs UNOOSA. Recuperado de: http://www.unoosa.org/oosa/osoindex/search-ng.jspx?lf_id=
+
+USGS-NASA (2018). Landsat, Benefiting Society for Fifty Years. Case Study Book. Estados Unidos: U.S. Geological Survey, USGS-National Aeronautics and Space Administration, pp.60.
 
 
-<p align="center">
-  <img src="/img_files/Captura_radar.PNG" "Atlas de Riesgos, Gobierno Federal, CENAPRED." "Atlas de Riesgos, Gobierno Federal, CENAPRED." alt="NF"/>
-Atlas de Riesgos, Gobierno Federal, CENAPRED.
+
   
-Debido a lo anterior, nuestro proyecto de Machine Learning de clasificación de imágenes de satélite busca servir como base para la distinción y análisis de la información proveniente del monitoreo satelital para identificar los riesgos naturales que se presentan con más frecuencia en nuestro país mediante un proceso rápido y oportuno.
 
-Para desarrollar este proyecto planteamos aplicar un algoritmo no supervisado para la clasificación de imágenes del satélite Sentinel-2 instrumento multi-espectral Nivel A2, las cuales se obtendrán por medio de Copernicus Open Access Hub. Para la aplicación se propone emplear el clasificador de K-Vecino más próximo (K-Nearest Neighbor Classifier, K-NN).
-
-```
-Fuentes:
- 
-Labastida, Jaime y Ruiz, Rosaura (coord.) (2010). "El Territorio Mexicano. 7.1.3. Factores que influyen en la distribución de los climas y la biodiversidad en México" en 
-
-Enciclopedia de Conocimientos Fundamentales: UNAM-Siglo XXI, Vol. 3 Historia, Geografía. México: Universidad Nacional Autónoma de México.
-
-Rzedowski, Jerzy (2006). Vegetación de México. 1ra. Edición digital. México: Comisión Nacional para el Conocimiento y Uso de la Biodiversidad, CONABIO. Primera Edición, 1978, 
- 
-Limusa. 504 pp.
-
-CONAGUA-CENAPRED (2018). Puntos críticos de inundación en "Sistema de información sobre riesgos". México: Comisión Nacional del Agua, CONAGUA y Centro Nacional de Prevención de Desastres, CENAPRED. Disponible en: http://www.atlasnacionalderiesgos.gob.mx/archivo/visor-capas.html 
- ```
