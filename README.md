@@ -14,7 +14,7 @@
 <p align="justify">
 Actualmente, alrededor de nuestro planeta orbitan cerca de 7460 satélites artificiales (UNOOSA, 2021). Aproximadamente un 10% de éstos tienen entre sus funciones captar imágenes desde el espacio. Dentro de los proyectos de observación que permiten consultar sus imágenes en alta resolución destacan los satélites Landsat de Estados Unidos (NASA, 2021) y Sentinel, perteneciente a Copernicus de la Unión Europea (ESA, 2021).
 <p align="justify">
- La disponibilidad de imágenes con alta calidad representa un recurso con gran potencial para diversos fines como protección del medio ambiente, prevención y atención frente a desastres naturales, planeación urbana, entre otros. No obstante, el análisis de las fotografías satelitales representa una labor muy demandante en tiempo y recursos humanos. Afortunadamente, es posible realizar estas tareas de identificación y categorización de imágenes de satélite por medio de algoritmos de Machine Learning.
+ La disponibilidad de imágenes con alta calidad representa un recurso con gran potencial para diversos fines como protección del medio ambiente, prevención y atención frente a desastres naturales, planeación urbana, entre otros. No obstante, el análisis de las imágenes satelitales representa una labor muy demandante en tiempo y recursos humanos. Afortunadamente, es posible realizar estas tareas de identificación y categorización de imágenes de satélite por medio de algoritmos de Machine Learning.
 
 ## **¿Cuál es el propósito y por qué es importante?**
 ### _Objetivo y justificación_
